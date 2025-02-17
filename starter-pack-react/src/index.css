@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@theme {
+  /* custom fonts */
+  --font-*: initial;
+  --font-primary: "Poppins", serif;
+  --font-secondary: "Roboto", serif;
+  /* Custom Breakpoints */
+  --breakpoint-*: initial;
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+  --breakpoint-xxxl: 1600px;
+  --breakpoint-xxxxl: 4000px;
+}
+
+/* common css */
+.container-fluid {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 320px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 4000px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.section-py {
+  padding-block-start: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+  padding-block-end: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+}
+
+.section-my {
+  margin-block-start: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+  margin-block-end: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+}
+
+.section-pt {
+  padding-block-start: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+}
+
+.section-mt {
+  margin-block-start: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+}
+
+.section-pb {
+  padding-block-end: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+}
+
+.section-mb {
+  margin-block-end: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+}
+
+.title-mb {
+  margin-block-end: clamp(1.25rem, 2vw, 3.125rem);
+}
+
+.title-mt {
+  margin-block-start: clamp(1.25rem, 2vw, 3.125rem);
+}
+
+.title-pb {
+  padding-block-end: clamp(1.25rem, 2vw, 3.125rem);
+}
+
+.title-pt {
+  padding-block-start: clamp(1.25rem, 2vw, 3.125rem);
+}
